@@ -5,6 +5,8 @@ class Myop < Formula
   version "1.0.0"
   sha256 "a2f66fb972a730bf4c82360191e0af86ff2e02b95c1fe0e9284e5ecbc9cb963f"
 
+  depends_on "topsframework/tops/tops"
+
   def install
     bin.install Dir["scripts/*"]
     prefix.install Dir["*"]
